@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+*.log
+1 数据仓库项目/

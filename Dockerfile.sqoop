@@ -1,0 +1,14 @@
+FROM pavansrivathsa/sqoop
+
+COPY --from=bde2020/hadoop-nodemanager:2.0.0-hadoop3.2.1-java8 /opt/hadoop-3.2.1 /opt/hadoop-3.2.1
+
+ENV HADOOP_HOME=/opt/hadoop-3.2.1
+ENV HADOOP_PREFIX=/opt/hadoop-3.2.1
+ENV HADOOP_COMMON_HOME=/opt/hadoop-3.2.1
+ENV HADOOP_HDFS_HOME=/opt/hadoop-3.2.1
+ENV HADOOP_YARN_HOME=/opt/hadoop-3.2.1
+ENV HADOOP_MAPRED_HOME=/opt/hadoop-3.2.1
+
+ENV PATH=/opt/hadoop-3.2.1/bin:/opt/hadoop-3.2.1/sbin:$PATH
+
+CMD ["bash"]
