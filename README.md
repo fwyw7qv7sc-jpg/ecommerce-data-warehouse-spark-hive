@@ -39,9 +39,6 @@
                   └──────────────┘
 ```
 
-完整数据链路：
-`MySQL   ↓ Sqoop   ↓ HDFS / ODS   ↓ Spark ETL   ↓ HDFS / DWD   ↓ Hive   ↓ DWS   ↓ ADS`
-
 ## 2. 技术栈
 | 技术 | 版本 | 作用 |
 | :--- | :--- | :--- |
